@@ -8,15 +8,13 @@ public:
          sum+=arr[i];
         }
         avg=sum/k;
-         if(avg>=threshold){
-                cnt++;
-            }
+        if(sum >= k * threshold)
+    cnt++;
         for(int i=k;i<arr.size();i++){
             sum=sum-arr[i-k]+arr[i];
             avg=sum/k;
-             if(avg>=threshold){
-                cnt++;
-            }
+             if(sum >= k * threshold)
+    cnt++;
            
         }
         return cnt;
