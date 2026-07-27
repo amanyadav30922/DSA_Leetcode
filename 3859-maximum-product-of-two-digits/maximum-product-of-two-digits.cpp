@@ -5,8 +5,8 @@ public:
         vector<int>ans;
         int x=n;
         while(n>0){
-           int a=n%10;
-            ans.push_back(a);
+           
+            ans.push_back(n%10);
             n/=10;
 
         }
