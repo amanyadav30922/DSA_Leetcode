@@ -11,6 +11,7 @@ public:
                 
             }
             mp.insert(s[right]);
+            
             ans=max(ans,right-left+1);
         }
         return ans;
